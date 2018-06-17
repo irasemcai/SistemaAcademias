@@ -67,10 +67,29 @@ public class PlanTrabajoAcademia {
        this.programaEducativo= programaEduc;
    }
    
-   
-   
-   public String buscarActividadporFecha(Date fecha){
-       return null;
+   public ArrayList<TemaExamen> getTemasExamen(){
+       return temasExamen;
+   }
+   public void setTemasExamen(ArrayList<TemaExamen> temasExamenes){
+       this.temasExamen = temasExamenes;
    }
    
+   public ArrayList<FormasEvaluacion> getFormasEvaluacion(){
+       return formasEvaluacion;
+   }
+   public void setFormasEvaluacion(ArrayList<FormasEvaluacion> formasEvaluacion){
+       this.formasEvaluacion= formasEvaluacion;
+   }
+   
+   public ArrayList<ActividadReunionAccion> getActReunionAcciones(){
+       return actividadReunionAcciones;
+   }
+   public void setActReunionAcciones (ArrayList<ActividadReunionAccion> ActReunionAcciones){
+       this.actividadReunionAcciones= ActReunionAcciones;
+   }
+   
+   public String toString(){
+       return this.planTrabajoAcademia+ " " + this.fechaAprobacion+ " "+ this.programaEducativo+ " "+ this.actividadReunionAcciones;
+   }
+
 }

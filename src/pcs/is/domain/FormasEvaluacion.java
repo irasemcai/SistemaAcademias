@@ -36,4 +36,8 @@ public class FormasEvaluacion {
     public int porcentajeAvance(){
         return 0;       
     }
+    
+    int calcularPorcentajeAvance(){
+        return 0;
+    }
 }

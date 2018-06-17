@@ -59,5 +59,8 @@ public class ActividadReunionAccion {
     public void setObjetivo(String objetivo){
         this.objetivo= objetivo;
     }
-         
+      
+    public String toString(){
+        return this.fecha + " "+ actividad+ " "+ formaOperar;
+    }
 }

@@ -14,7 +14,7 @@ import pcs.is.domain.PlanTrabajoAcademia;
  *
  * @author IrasemaCaicero
  */
-public interface IPlanTrabajoAcademia {
+public interface IPlanTrabajoAcademiaDAO {
    
    List<PlanTrabajoAcademia> obtenerTodosPlanTAcademia();
    List<PlanTrabajoAcademia> obtenerPlanTAPorEstado(String estado);

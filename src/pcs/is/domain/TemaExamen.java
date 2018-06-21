@@ -11,7 +11,7 @@ package pcs.is.domain;
  */
 public class TemaExamen {
     private ExperienciaEducativa experienciaEducativa;
-    private String temasParcial;
+    private String[] temasParcial;
     
     public TemaExamen(TemaExamen temaExamen){
         this.experienciaEducativa = temaExamen.experienciaEducativa;
@@ -25,11 +25,16 @@ public class TemaExamen {
         this.experienciaEducativa= ee;
     }
     
-    public String getTemasParcial(){
+    public String[] getTemasParcial(){
         return temasParcial;
     }
-    public void setTemasParcial(String temasParcial){
+    public void setTemasParcial(String[] temasParcial){
         this.temasParcial = temasParcial;
+        
+    }
+    
+    public void buscarTemas(String tema){
+        
     }
 }
 

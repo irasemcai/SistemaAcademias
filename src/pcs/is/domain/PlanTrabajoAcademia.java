@@ -5,6 +5,8 @@
 package pcs.is.domain;
 
 import java.sql.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 /**
@@ -21,7 +23,7 @@ public class PlanTrabajoAcademia {
    private ArrayList <FormasEvaluacion> formasEvaluacion;
    private ArrayList <ActividadReunionAccion> actividadReunionAcciones;
    
-   public PlanTrabajoAcademia(PlanTrabajoAcademia planTrabajoAcademia){
+/*   public PlanTrabajoAcademia(PlanTrabajoAcademia planTrabajoAcademia){
        this.estado= planTrabajoAcademia.estado;
        this.fechaAprobacion = planTrabajoAcademia.fechaAprobacion;
        this.objetivoGeneral = planTrabajoAcademia.objetivoGeneral;
@@ -31,6 +33,10 @@ public class PlanTrabajoAcademia {
        this.formasEvaluacion= planTrabajoAcademia.formasEvaluacion;
        this.actividadReunionAcciones = planTrabajoAcademia.actividadReunionAcciones;
    }
+*/
+    public PlanTrabajoAcademia() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
    
    public String getEstado(){
        return estado;
@@ -92,4 +98,11 @@ public class PlanTrabajoAcademia {
        return this.planTrabajoAcademia+ " " + this.fechaAprobacion+ " "+ this.programaEducativo+ " "+ this.actividadReunionAcciones;
    }
 
+   public String buscarActividadPorFecha(Date fecha){
+       DateFormat df = new SimpleDateFormat("000000");
+       fecha= df.parse(String.valueOf(0));
+       actividadReunionAcciones.get(fecha);
+       return null;    
+   }
+   
 }
